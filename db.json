@@ -1,0 +1,169 @@
+{
+  "pages": [
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "name": "name",
+          "labelEn": "Name",
+          "labelAr": "الاسم",
+          "type": "TEXT"
+        },
+        {
+          "name": "age",
+          "labelEn": "Age",
+          "labelAr": "العمر",
+          "isRequired": true,
+          "type": "TEXT"
+        },
+        {
+          "name": "driverLinces",
+          "labelEn": "Driver Linces",
+          "labelAr": "رخصة القيادة",
+          "isRequired": true,
+          "isVisible": false,
+          "isVisibleIf": "{age} > 18",
+          "type": "TEXT"
+        },
+        {
+          "name": "drivingType",
+          "labelEn": "Driver type",
+          "labelAr": "نوع القيادة",
+          "isRequired": true,
+          "options": [
+            {
+              "value": "crazy",
+              "labelEn": "Crazy driving",
+              "labelAr": "قيادة مجنونة"
+            },
+            {
+              "value": "normal",
+              "labelEn": "Normal driver",
+              "labelAr": "قيادة عادية"
+            }
+          ],
+          "type": "MULTI_SELECT"
+        }
+      ],
+      "order": 1,
+      "id": 1
+    },
+    {
+      "name": "page2",
+      "elements": [],
+      "order": 2,
+      "id": 2
+    },
+    {
+      "name": "page3",
+      "order": 3,
+      "id": 3,
+      "elements": []
+    }
+  ],
+  "surveys": [{
+    "id": 1,
+    "name": "survey1",
+    "titleEn": "Survey 1",
+    "titleAr": "استبيان 1",
+    "descriptionEn": "Survey 1 description",
+    "descriptionAr": "وصف استبيان 1",
+    "logo": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+    "background":"linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
+    "mode": "light",
+    "mainColor": "fb8500",
+    "secondaryColor": "8ecae6",
+    "layout":"layout_1",
+    "pages" :[
+      {
+        "name": "page1",
+        "titleEn": "Step One",
+        "titleAr": "الخطوة الأولى",
+        "descriptionEn": "Step One description",
+        "descriptionAr": "وصف الخطوة الأولى",
+        "elements": [
+          {
+            "name": "name",
+            "labelEn": "Name",
+            "labelAr": "الاسم",
+            "type": "TEXT"
+          },
+          {
+            "name": "age",
+            "labelEn": "Age",
+            "labelAr": "العمر",
+            "isRequired": true,
+            "type": "TEXT"
+          },
+          {
+            "name": "driverLinces",
+            "labelEn": "Driver Linces",
+            "labelAr": "رخصة القيادة",
+            "isRequired": true,
+            "isVisible": false,
+            "isVisibleIf": "{age} > 18",
+            "type": "TEXT"
+          },
+          {
+            "name": "drivingType",
+            "labelEn": "Driver type",
+            "labelAr": "نوع القيادة",
+            "isRequired": true,
+            "options": [
+              {
+                "value": "crazy",
+                "labelEn": "Crazy driving",
+                "labelAr": "قيادة مجنونة"
+              },
+              {
+                "value": "normal",
+                "labelEn": "Normal driver",
+                "labelAr": "قيادة عادية"
+              }
+            ],
+            "type": "MULTI_SELECT"
+          }
+        ],
+        "order": 1,
+        "id": 1
+      },
+      {
+        "name": "page2",
+        "titleEn": "Step Two",
+        "titleAr": "الخطوة الثانية",
+        "descriptionEn": "Step One description",
+        "descriptionAr": "وصف الخطوة الأولى",
+        "elements": [
+          {
+            "name": "carType",
+            "labelEn": "Car type",
+            "labelAr": "نوع السيارة",
+            "isRequired": true,
+            "type": "TEXT"
+          },
+          {
+            "name": "carModel",
+            "labelEn": "Car Model",
+            "labelAr": "موديل السيارة",
+            "isRequired": true,
+            "type": "TEXT"
+          }
+        ],
+        "order": 1,
+        "id": 1
+      },
+      {
+        "name": "page3",
+        "titleEn": "Step Three",
+        "titleAr": "الخطوة الثالثة",
+        "descriptionEn": "Step One description",
+        "descriptionAr": "وصف الخطوة الأولى",
+        "order": 3,
+        "id": 3,
+        "elements": []
+      }
+
+    ]
+  
+  }] 
+}
